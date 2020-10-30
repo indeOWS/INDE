@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>INDEDialogBase</class>
+ <widget class="QDialog" name="INDEDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>INDE</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>60</y>
+     <width>791</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>NATIONAL SPATIAL DATA INFRASTRUCTURE OWS SERVICES</string>
+   </property>
+   <widget class="QListWidget" name="listWidgetInstitutionAvailableWMS">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>41</y>
+      <width>310</width>
+      <height>250</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidgetSelectedInstitutions">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>40</y>
+      <width>310</width>
+      <height>250</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>20</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Selected Institututions</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadWmsLayers">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>73</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Remove only selected</string>
+    </property>
+    <property name="text">
+     <string>Load WMS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Available Institutuions</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonAddAllItems">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>74</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Add all items</string>
+    </property>
+    <property name="text">
+     <string>&gt;&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonRemoveAllItems">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>230</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Remove all</string>
+    </property>
+    <property name="text">
+     <string>&lt;&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonRemoveSelectedItems">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>178</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Remove only selected</string>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wipeAllConnectionsWms">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>104</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Remove only selected</string>
+    </property>
+    <property name="text">
+     <string>Wipe WMS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonAddSelectedItems">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>126</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Add only selected</string>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadWfsLayers">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>153</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Remove only selected</string>
+    </property>
+    <property name="text">
+     <string>Load WFS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadWcsLayers">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>233</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Remove only selected</string>
+    </property>
+    <property name="text">
+     <string>Load WCS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wipeAllConnectionsWfs">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>184</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Remove only selected</string>
+    </property>
+    <property name="text">
+     <string>Wipe WFS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wipeAllConnectionsWcs">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>264</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Remove only selected</string>
+    </property>
+    <property name="text">
+     <string>Wipe WCS</string>
+    </property>
+   </widget>
+   <widget class="QDialogButtonBox" name="button_box">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>40</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="standardButtons">
+     <set>QDialogButtonBox::Ok</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>350</y>
+     <width>791</width>
+     <height>288</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QListWidget" name="listWidgetBasemapList">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>310</width>
+      <height>250</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidgetSelectedBasemaps">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>30</y>
+      <width>310</width>
+      <height>250</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonAddAllBasemaps">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>64</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Add all items</string>
+    </property>
+    <property name="text">
+     <string>&gt;&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonRemoveAllBasemaps">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>220</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Remove all</string>
+    </property>
+    <property name="text">
+     <string>&lt;&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonRemoveSelectedBasemaps">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>168</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Remove only selected</string>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonAddSelectedBasemaps">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>116</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Add only selected</string>
+    </property>
+    <property name="text">
+     <string>&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadXyzLayers">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>120</y>
+      <width>81</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Remove only selected</string>
+    </property>
+    <property name="text">
+     <string>Load XYZ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wipeAllConnectionsXyz">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>150</y>
+      <width>81</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Remove only selected</string>
+    </property>
+    <property name="text">
+     <string>Wipe XYZ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>-4</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Available Basemaps</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>-4</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Selected Basemaps</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="censipamlogo">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>2</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/plugins/INDE/censipamLogo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="inde">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>2</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/plugins/INDE/icon.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="indeLogo">
+   <property name="geometry">
+    <rect>
+     <x>325</x>
+     <y>2</y>
+     <width>170</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/plugins/INDE/indeLogo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+  <include location="../indePlugin-main/resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>button_box</sender>
+   <signal>accepted()</signal>
+   <receiver>INDEDialogBase</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_box</sender>
+   <signal>rejected()</signal>
+   <receiver>INDEDialogBase</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

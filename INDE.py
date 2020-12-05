@@ -385,7 +385,7 @@ class INDE:
                                                        "http://www.aisweb.decea.gov.br/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities", "", "22", "0"))
         if 'IBAMA' in itemsToBeAdd:
             connectionList.append(connectionAtributtes(ogc, "IBAMA", "", "", "",
-                                                       "http://siscom.ibama.gov.br/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities", "", "22", "0"))
+                                                       "https://geoaisweb.decea.gov.br/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities", "", "22", "0"))
         if 'IBGE' in itemsToBeAdd:
             connectionList.append(connectionAtributtes(ogc, "IBGE", "", "", "",
                                                        "https://geoservicos.ibge.gov.br/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities", "", "22", "0"))
